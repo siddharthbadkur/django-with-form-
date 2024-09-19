@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1 class="text-center">registration form</h1>
+<h4 class="text-center text-success mb-3"> {{msg}} </h4>
+<form action='{% url "home" %}' method="post" class="p-5">
+{% csrf_token %}
+{{form}}
+  <button type="submit" class='mt-3 text-primary'>register</button>
+  <a href="{% url 'home' %}"> login </a> Click hear if register ?
+</form>
+{% endblock %}

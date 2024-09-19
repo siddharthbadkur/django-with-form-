@@ -1,0 +1,133 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="{% static  'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand text-capitalize" href="#">Organic farming </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar1" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0  ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize " href="{% url 'about' %}">About </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize " href="{% url 'service' %}">Services </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link text-capitalize " href="{% url 'gallery' %}">Gallery </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-capitalize " href="{% url 'contact' %}">Contact us </a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <header>
+        {% block content %}
+        <h1> this is base page </h1>
+        {%endblock%}
+     
+        <footer class="bg-dark text-white pt-5 pb-4">
+            <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">organic farming</h5>
+                        <p> Organic  farming  is  a  production  management  system  excluding  of  all  synthetic
+                            off-farm inputs  but  rely  upon  on-farm  agronomic,  biological  and  mechanical  methods 
+                             like  crop rotations,  crop  residues,  animal  manures,  off-farm  organic  waste,  mineral  grade  rock additives 
+                              and  biological  system  of  nutrient  mobilization  
+                             and plant  protection,  etc  which promotes and enhances biodiversity, biologic         </p>
+                    </div>
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Qualities </h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration: none;">Donation </a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration: none;">E-commerce </a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration: none;">Events </a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration: none;">Blogs </a>
+                        </p>
+                        
+                    </div>
+                    <div class="col-md-3 col-lg-2  col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact Us  </h5>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration: none;">Siddharth Badkur </a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration: none;"> Saket Nagar Bhopal </a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration: none;">6260500989</a>
+                        </p>
+                        <p>
+                            <a href="#" class="text-white" style="text-decoration: none;">+11 33456 68876</a>
+                        </p>               
+                    </div>
+                    
+                </div>
+                <hr class="mb-4">
+                <div class="row align-items-center">
+                    <div class="col-md-7 col-lg-8 ">
+                        <p>Copyright 02020 All rights reserved by:
+                            <a href="#" style="text-decoration: none;">
+                                <strong class="text-warning"> organic farming </strong>
+                            </a>
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-lg-4">
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-facebook"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-google-plus"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-linkedin-in"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fab fa-youtube"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+          
+</body>
+</html>

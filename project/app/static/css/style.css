@@ -1,0 +1,158 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+.carousel-item img{
+    width: 100%;
+    height: 93vh;
+
+}
+ 
+.navbar1{
+    justify-content: end;
+}
+.container-bg-test figure {
+    display: flex;
+}
+.text2{
+    margin-left: 10px;
+    align-items: start;
+}
+
+.text2 button{
+    height: 37px;
+    width: 100px;
+    text-decoration-color: rgb(127, 255, 178);
+    border: 2px double black;
+    background-color: antiquewhite;
+    
+}
+ .col-md-4 {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    
+
+ }
+ .offer-style{
+    background-color:grey;
+
+ }
+.row-1 button{
+    color: black;
+}
+  
+.container-service{
+    display: inline-block;
+    flex-direction: row;
+
+    }
+
+ 
+#wel {
+    color: black; 
+    margin-left: 20px;
+}  
+.wel1{
+    margin-left: 40%;
+    margin-top: 20px;
+}
+.wel1 h2{
+    margin-top: 10px;
+    
+}
+.img-1{
+    margin-top: -8%;
+    margin-left: 5%;
+    margin-right: 50px;
+}
+.wel2 h4{
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-right: 50%;
+}
+.img-2{
+    margin-left: 60%;
+    margin-top: -20%;
+}
+.about__container {
+        padding: 10rem 1rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: center;
+    }
+    
+.about__content p {
+        margin-bottom: 2rem;
+        color: var(--text-light);
+        color: brown;
+        
+    }
+
+ .about__content{
+        margin-left: 10%;
+    }
+ 
+    
+    
+    
+.about__content h4::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 2rem;
+        height: 100%;
+        width: 1rem;
+        background-color: var(--primary-color);
+    }
+ 
+  .about__image{
+    display: flex;
+    flex-direction: row-reverse;
+
+  }
+  
+
+
+    
+.about{
+        margin: top 5px;
+}
+.service-section{
+    margin-left: 15px;
+    display: flex;
+}
+ 
+
+.fig1{
+    margin-left: 20%; 
+    margin-top: 20px;  
+}
+ 
+
+.text2 h4{
+    margin-left: 30%;
+}
+.text2 p{
+    margin-left: 25px;
+}
+.button01{
+    margin-left: 20px;
+}
+.offer_style{
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)) ,url("/static/images/image 7.jpg"); 
+    padding :100px;   
+}
+.offer h1 {
+    color: white;    
+}
+.offer p {
+    color:white;
+}
+
+
+ 
+    

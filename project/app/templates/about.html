@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="main heading my-5">
+  <div class="text-center">
+    <h1 class="display-4">About us </h1>
+    <hr class="w-25 mx-auto">
+  </div>
+  <div class="container-bg-test">
+    <div class="row">
+
+      <div class="col-lg-4 col-md-6 col-xl-2 col-xxl-1 col-sm-12"> </div> 
+      <figure class="fig1">
+      
+        <img src="{% static 'images/image8.jpg' %}" class="img-fluid" alt="image not found" height="400px" width="300px" style="margin-left: -20px;">
+        <div class="text2">
+          
+          <h4>MY journey</h4>
+          <p>Journal of Organic Farming and Biofertilizers (JOFB)  is an international<br>
+           open-access peer-reviewed, interdisciplinary, bimonthly journal that aims<br>
+            to contribute to the constant research and development done by various researchers <br>
+            and scholars across the globe.<br>
+          </p>
+          <div class="button01">
+            <a class=" btn btn btn-primary " href="{% url 'sss' %}" role="button">Learn More</a>
+          </div>
+        
+         
+        </div>
+      </figure>
+      
+       
+<div class="container">
+  <div class="row">
+    <div id="navbar-example" style="position: relative;"></div>
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+      <a class="navbar-brand" href="#">About organic farming </a>
+      <ul class="nav nav-pills">
+        <li class="nav-item"> 
+          <a class="nav-link" href="@fat">@fat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="@mda">@mdo</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading3">one</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading4">two</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading5">three</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0" style="height: 300px; overflow-y: scroll;">
+      <h4 id="@fat">@fat</h4>
+      <p>Organic farming is a production system which avoids or largely excludes the use of synthetically compounded fertilizers, pesticides, growth regulators, genetically modified organisms and livestock food additives. To the maximum extent possible organic farming system rely upon crop rotations, use of crop residues, animal manures, legumes, green manures, off farm organic wastes, biofertilizers, mechanical cultivation, mineral bearing rocks and aspects of biological control to maintain soil productivity and tilth to supply plant nutrients and to control insect, weeds and other pests.</p>
+      <h4 id="scrollspyHeading2">Second heading</h4>
+      <p>Organic methods can increase farm productivity, repair decades of environmental damage and knit small farm families into more sustainable distribution networks leading to improved food security if they organize themselves in production, certification and marketing. During last few years an increasing number of farmers have shown lack of interest in farming and the people who used to cultivate are migrating to other areas. Organic farming is one way to promote either self-sufficiency or food security. Use of massive inputs of chemical fertilizers and toxic pesticides poisons the land and water heavily. The after-effects of this are severe environmental consequences, including loss of topsoil, decrease in soil fertility, surface and ground water contamination and loss of genetic diversity.</p>
+      <h4 id="scrollspyHeading3">Third heading</h4>
+      <p>Organic farming which is a holistic production management system that promotes and enhances agro-ecosystem health, including biodiversity, biological cycles, and soil biological activity is hence important. Many studies have shown that organic farming methods can produce even higher yields than conventional methods. Significant difference in soil health indicators such as nitrogen mineralization potential and microbial abundance and diversity, which were higher in the organic farms can also be seen. The increased soil health in organic farms also resulted in considerably lower insect and disease incidence. The emphasis on small-scale integrated farming systems has the potential to revitalize rural areas and their economies.
+      </p>
+      <h4 id="scrollspyHeading4">Fourth heading</h4>
+      <p>In organic farming, chemical herbicides cannot be used. So weeding can be done only manually. Different cultural practices like tillage, flooding, mulching can be used to manage the weeds. Besides, biological (pathogen) method can be used to manage the loss due to weeds. When the ground is fallow, a cover crop can be planted to suppress weeds and build soil quality. Weeds growth can also be limited by using drip irrigation whenever possible, which restricts the distribution of water to the plant line.
+
+      </p>
+      <h4 id="scrollspyHeading5">Fifth heading</h4>
+      <p>Organic farming is a production system which avoids or largely excludes the use of synthetically compounded fertilizers, pesticides, growth regulators, genetically modified organisms and livestock food additives. To the maximum extent possible organic farming system rely upon crop rotations, use of crop residues, animal manures, legumes, green manures, off farm organic wastes, biofertilizers, mechanical cultivation, mineral bearing rocks and aspects of biological control to maintain soil productivity and tilth to supply plant nutrients and to control insect, weeds and other pests.</p>
+    </div>
+  </div>
+</div>
+</section>
+</div>
+
+
+
+<section class="main_heading my-5 pt-5 offer_style">
+  <div class="container_fluid">
+      <div class="row">
+          <div class="col-xxl-12 col-12 py-5 text-center offer">
+              <h1>Helping You Achieve Harmony </h1>
+              <p> Become a Part of THE LARGEST HINDU COMMUNITY..Today !!!!</p>
+              <!-- <button type="button " class="btn btn-outline-light" data-toggle="tooltip" data-placement="right" >Check More </button> -->
+               <button class="btn btn-outline-light" type="button">Check More</button>
+          </div>
+      </div>
+  </div>
+</section>
+{% endblock %}
+ 
+
+        
